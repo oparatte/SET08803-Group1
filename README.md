@@ -6,3 +6,6 @@ Welcome to the GitHub page for student group 1 enroled in the SET08803 2021-2 TR
 * Chris Thorpe
 * Greg Morris
 * Olivier Paratte
+
+## Link to zube.io project
+https://zube.io/set08803-group1/set08803-assessment/w/workspace-1/kanban
