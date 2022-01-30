@@ -6,6 +6,7 @@ Welcome to the GitHub page for student group 1 enroled in the SET08803 2021-2 TR
 * Chris Thorpe
 * Greg Morris
 * Amit Lalloo
+* Daniel Nnamdi Onuchukwu
 * Olivier Paratte
 
 ## Link to zube.io project
