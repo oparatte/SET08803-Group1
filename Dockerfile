@@ -1,5 +1,6 @@
 FROM openjdk:latest
-COPY ./target/classes/com /tmp/com
+COPY ./target/SET08803-Group1-0.1.0.1-jar-with-dependencies.jar /tmp
 WORKDIR /tmp
-ENTRYPOINT ["java", "com.napier.sem.App"]
+ENTRYPOINT ["java", "-jar", "SET08803-Group1-0.1.0.1-jar-with-dependencies.jar"]
+
 
