@@ -8,7 +8,8 @@ rectangle "Organisation System" {
     usecase UC1 as "Get all countries
         by population"
 
-    usecase UCa as "Export country list"
+    usecase UCa as "Print / Export
+        country list"
 
     A1 - UC1
     UC1 ..> UCa : include
