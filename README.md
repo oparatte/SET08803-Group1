@@ -3,7 +3,7 @@ Welcome to the GitHub page for student group 1 enroled in the SET08803 2021-2 TR
 
 ## Build Badges 
 * Master Build Status ![workflow](https://github.com/oparatte/SET08803-Group1/actions/workflows/main.yml/badge.svg?)
-* Develop Build Status ![GitHub Workflow Status (branch)](https://img.shields.io/github/workflow/status/oparatte/SET08803-Group1/master%20build/develop)
+* Develop Build Status ![GitHub Workflow Status (branch)](https://img.shields.io/github/workflow/status/oparatte/SET08803-Group1/master%20build/develop?label=develop%20branch%20)
 * Code coverage of tests for
 * Release [![Releases](https://img.shields.io/github/release/oparatte/SET08803-Group1/all.svg?style=flat-square)](https://github.com/oparatte/SET08803-Group1/releases)
 * License [![LICENSE](https://img.shields.io/github/license/oparatte/SET08803-Group1.svg?style=flat-square)](https://github.com/oparatte/SET08803-Group1/blob/master/LICENSE)
