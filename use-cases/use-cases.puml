@@ -1,0 +1,40 @@
+@startuml
+
+actor A1 as "Assistant"
+
+rectangle Database
+
+rectangle "Organisation System" {
+    usecase UC1 as "Get all countries
+        by population"
+
+    usecase UCa as "Print / Export
+        country list"
+
+    A1 - UC1
+    UC1 ..> UCa : include
+    UC1 - Database
+}
+
+@enduml
+
+@startuml
+
+actor A1 as "Assistant"
+
+rectangle Database
+
+rectangle "Organisation System" {
+    usecase UC2 as "Get all countries
+        in the continent, sorted
+        by population"
+
+    usecase UCa as "Print / Export
+        country list"
+
+    A1 - UC2
+    UC2 ..> UCa : include
+    UC2 - Database
+}
+
+@enduml
