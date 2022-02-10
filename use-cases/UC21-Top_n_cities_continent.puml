@@ -1,0 +1,26 @@
+@startuml
+
+package "Use Case 21" {
+
+actor A1 as "Planner""
+
+rectangle "Information System" {
+    usecase UC21 as "Get top //N// populated
+    capital cities in a continent"
+
+    usecase UCa as "Provide //N//"
+
+     usecase UCc as "Provide //continent//"
+
+    usecase UCb as "Print / Export
+            country list"
+
+    A1 - UC21
+    A1 - UCa
+    A1 - UCc
+    UCa ..> UC21 : include
+    UCc ..> UC21 : include
+    UC21 ..> UCb : include
+}
+}
+@enduml
