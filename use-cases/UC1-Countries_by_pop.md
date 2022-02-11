@@ -1,4 +1,4 @@
-# USE CASE: 4 Produce a Report on the Salary of Employees of a Given Role
+# USE CASE: 1 Produce a report with all the countries in the world, organised by largest population to smallest.
 
 ## CHARACTERISTIC INFORMATION
 
@@ -43,7 +43,8 @@ Assistant is asked for population information by the management.
 
 ## EXTENSIONS
 
-3. **Information is not on the database**:
+**Information is not on the database**:
+
     1. Assistant checks the details are correct.
     2. Assistant informs management that the report failed.
 
