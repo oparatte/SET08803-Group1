@@ -89,7 +89,7 @@ public class DBUtils {
                 country.setName(resultSet.getString("country.Name"));
                 country.setPopulation(resultSet.getString("country.Population"));
                 country.setCode(resultSet.getString("country.Code"));
-                country.setCapital(resultSet.getString("country.Capital"));
+                country.setCapital(resultSet.getString("city.Name"));  //requires JOIN city ON country.Capital=city.ID
                 country.setContinent(resultSet.getString("country.Continent"));
                 country.setCode2(resultSet.getString("country.Code2"));
                 country.setGovernmentForm(resultSet.getString("country.GovernmentForm"));

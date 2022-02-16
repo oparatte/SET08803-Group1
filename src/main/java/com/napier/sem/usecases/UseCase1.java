@@ -19,17 +19,19 @@ public class UseCase1 {
         dbUtils.connect();
 
         //Prepare the SQL Query for the Use Case
-        String query = "Select * FROM country ORDER BY population DESC";
+        String query = "SELECT * FROM country INNER JOIN city ON country.Capital=city.ID "
+                + " ORDER BY country.population DESC";
 
         //Put the result of the query into the Data Object Array
         ArrayList<Country> countries = dbUtils.populateCountryArrayList(dbUtils.getResultSet(query));
 
         //Generate the Report
         System.out.println("UC 1 Report on Countries by Population");
-        System.out.println(String.format("%-30s %-15s","Country ", "Population"));
+        System.out.println(String.format("%-15s %-30s %-15s %-30s %-15s %-15s","Code","Country ","Continent","Region","Population","Capital"));
         for (Country con : countries)
         {
-            String record = String.format("%-30s %-15s",con.getName(),con.getPopulation());
+            String record = String.format("%-15s %-30s %-15s %-30s %-15s %-15s",con.getCode(),con.getName(),con.getContinent(),
+                    con.getRegion(),con.getPopulation(), con.getCapital());
             System.out.println(record);
         }
         //Disconnect from the Database
