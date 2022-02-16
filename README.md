@@ -22,7 +22,7 @@ https://zube.io/set08803-group1/set08803-assessment/w/workspace-1/kanban
 ## Requirements Met Overview
 | ID    | Name | Met  | Screenshot |
 |-------|------|------|------------|
-| 1 | All the countries in the world organised by largest population to smallest |   |  |
+| 1 | All the countries in the world organised by largest population to smallest | Yes | ![image](Screenshots/Requirement-1.png) |
 | 2 | All the countries in a continent organised by largest population to smallest |   |  |
 | 3 | All the countries in a region organised by largest population to smallest |   |  |
 | 4 | The top N populated countries in the world where N is provided by the user |   |  |
