@@ -1,5 +1,8 @@
+
+/'--- Usecase 1 ---'/
 @startuml
 
+package "Use Case 1" {
 actor A1 as "Assistant"
 
 rectangle "Information System" {
@@ -12,10 +15,14 @@ rectangle "Information System" {
     A1 - UC1
     UC1 ..> UCa : include
 }
+}
 @enduml
+
+/'--- Usecase 4 ---'/
 @startuml
 
-actor A1 as "Planner""
+package "Use Case 4" {
+actor A1 as "Planner"
 
 rectangle "Information System" {
     usecase UC4 as "Get top //N// populated
@@ -31,8 +38,13 @@ rectangle "Information System" {
     UCa ..> UC4 : include
     UC4 ..> UCb : include
 }
+}
 @enduml
+
+/'--- Usecase 9 ---'/
 @startuml
+
+package "Use Case 9" {
 
 actor A1 as "Coordinator"
 
@@ -50,12 +62,15 @@ rectangle "Information System" {
     UCa ..> UC9 : include
     UC9 ..> UCb : include
 }
+}
 @enduml
+
+/'--- Usecase 21 ---'/
 @startuml
 
 package "Use Case 21" {
 
-actor A1 as "Planner""
+actor A1 as "Planner"
 
 rectangle "Information System" {
     usecase UC21 as "Get top //N// populated
@@ -77,11 +92,13 @@ rectangle "Information System" {
 }
 }
 @enduml
+
+/'--- Usecase 30 ---'/
 @startuml
 
 package "Use Case 30" {
 
-actor A1 as "Planner""
+actor A1 as "Coordinator"
 
 rectangle "Information System" {
     usecase UC30 as "Get population of a district"
