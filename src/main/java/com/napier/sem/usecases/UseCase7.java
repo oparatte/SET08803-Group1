@@ -26,10 +26,10 @@ public class UseCase7 {
 
         //Generate the Report
         System.out.println("UC 7 Report on Cities by Population");
-        System.out.println(String.format("%-15s %-30s %-15s %-30s %-15s %-15s","Name","Country ","District","Population"));
+        System.out.println(String.format("%-30s %-30s %-30s %-15s","Name","Country ","District","Population"));
         for (City city : cities)
         {
-            String record = String.format("%-15s %-30s %-15s %-30s %-15s %-15s",city.getName(),city.getCountryCode(),
+            String record = String.format("%-30s %-30s %-30s %-15s",city.getName(),city.getCountryCode(),
                     city.getDistrict(),city.getPopulation());
             System.out.println(record);
         }
