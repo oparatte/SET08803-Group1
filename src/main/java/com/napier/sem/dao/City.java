@@ -6,7 +6,7 @@ public class City {
     String CountryCode;
     String District;
     String Population;
-    String County;
+    String Country;
 
     public String getID() { return ID;}
 
@@ -22,11 +22,15 @@ public class City {
 
     public String getDistrict() {return District;}
 
+    public void setDistrict(String District) {this.District = District;}
+
     public String getPopulation() {return Population;}
 
     public void setPopulation(String Population) {this.Population = Population;}
 
-    public String getCounty() {return County;}
+    public String getCountry() {return Country;}
+
+    public void setCountry(String County) {this.Country = Country;}
 
     @Override
     public String toString() {
@@ -36,7 +40,8 @@ public class City {
                 ", CountryCode='" + CountryCode + '\'' +
                 ", District='" + District + '\'' +
                 ", Population='" + Population + '\'' +
-                ", County='" + County + '\'' +
+                ", Country='" + Country + '\'' +
                 '}';
     }
+
 }

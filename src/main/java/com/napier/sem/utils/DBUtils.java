@@ -111,7 +111,7 @@ public class DBUtils {
         return countries;
     }
 
-    -    /**
+    /**
      * This method populates a City Array from a
      * ResultSet that brings back the City Table;
      * @param resultSet
