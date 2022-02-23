@@ -1,5 +1,6 @@
 package com.napier.sem.utils;
 
+import com.napier.sem.dao.City;
 import com.napier.sem.dao.Country;
 
 import java.sql.*;
@@ -108,6 +109,33 @@ public class DBUtils {
             e.printStackTrace();
         }
         return countries;
+    }
+
+    /**
+     * This method populates a City Array from a
+     * ResultSet that brings back the City Table;
+     * @param resultSet
+     * @return
+     */
+    public ArrayList<City> populateCityArrayList(ResultSet resultSet){
+
+        ArrayList<City> cities = new ArrayList<City>();
+        try {
+            while (resultSet.next()) {
+                City city = new City();
+
+                city.setName(resultSet.getString("city.Name"));
+                city.setDistrict(resultSet.getString("city.District"));
+                city.setPopulation(resultSet.getString("city.Population"));
+                city.setCountryCode(resultSet.getString("city.CountryCode"));
+                city.setCountry(resultSet.getString("country.Code"));  //requires JOIN country ON city.CountryCode=country.Code
+                cities.add(city);
+            }
+        }catch (SQLException e){
+            System.out.println("Error in populateCityArrayList :");
+            e.printStackTrace();
+        }
+        return cities;
     }
 
     /**
