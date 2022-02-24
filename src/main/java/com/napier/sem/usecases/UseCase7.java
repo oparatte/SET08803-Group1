@@ -19,7 +19,7 @@ public class UseCase7 {
 
         //Prepare the SQL Query for the Use Case
         String query = "SELECT * FROM city INNER JOIN country ON city.CountryCode=country.Code "
-                + " ORDER BY country.population DESC";
+                + " ORDER BY city.population DESC";
 
         //Put the result of the query into the Data Object Array
         ArrayList<City> cities = dbUtils.populateCityArrayList(dbUtils.getResultSet(query));
@@ -29,7 +29,7 @@ public class UseCase7 {
         System.out.println(String.format("%-30s %-30s %-30s %-15s","Name","Country ","District","Population"));
         for (City city : cities)
         {
-            String record = String.format("%-30s %-30s %-30s %-15s",city.getName(),city.getCountryCode(),
+            String record = String.format("%-30s %-30s %-30s %-15s",city.getName(),city.getCountry(),
                     city.getDistrict(),city.getPopulation());
             System.out.println(record);
         }

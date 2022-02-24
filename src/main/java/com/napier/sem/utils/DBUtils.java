@@ -127,8 +127,7 @@ public class DBUtils {
                 city.setName(resultSet.getString("city.Name"));
                 city.setDistrict(resultSet.getString("city.District"));
                 city.setPopulation(resultSet.getString("city.Population"));
-                city.setCountryCode(resultSet.getString("city.CountryCode"));
-                city.setCountry(resultSet.getString("country.Code"));  //requires JOIN country ON city.CountryCode=country.Code
+                city.setCountry(resultSet.getString("country.Name"));  //requires JOIN country ON city.CountryCode=country.Code
                 cities.add(city);
             }
         }catch (SQLException e){
