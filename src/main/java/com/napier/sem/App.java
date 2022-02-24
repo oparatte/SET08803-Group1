@@ -5,11 +5,13 @@ import com.napier.sem.usecases.UseCase2;
 import com.napier.sem.usecases.UseCase3;
 import com.napier.sem.usecases.UseCase41;
 
+import java.sql.SQLException;
+
 
 public class App
 {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws SQLException {
 
         //Execute UseCase 1
         UseCase1 useCase1 = new UseCase1();

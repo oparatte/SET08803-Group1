@@ -21,12 +21,11 @@ public class UseCase41 {
         String query = "SELECT SUM(population) as sum_population FROM country";
 
         //Generate the Report
-        System.out.println("UC 41 Report on Population of world");
-        System.out.println("Population of world: ");
-
         ResultSet rst = dbUtils.getResultSet(query);
+        String pop = rst.getString("sum_population");
 
-        System.out.println(rst);
+        System.out.println("UC 41 Report on Population of world");
+        System.out.println("Population of world: " +rst);
 
         //Disconnect from the Database
         dbUtils.disconnect();
