@@ -28,7 +28,6 @@ public class App
         UseCase4 useCase4 = new UseCase4();
         useCase4.printCountryPopulationReportDESC();
 
-        feature/all_cities_world_uc7
         //Execute UseCase 7
         UseCase7 useCase7 = new UseCase7();
         useCase7.printCityPopulationReportDESC();

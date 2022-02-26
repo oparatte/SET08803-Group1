@@ -37,6 +37,4 @@ public class UseCase7 {
         dbUtils.disconnect();
     }
 
-
-
 }
