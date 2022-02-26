@@ -31,6 +31,15 @@ public class App
         //Execute UseCase 8
         UseCase8 useCase8 = new UseCase8();
         useCase8.printCityPopulationReportDESC();
+
+        //Execute UseCase 12
+        UseCase12 useCase12 = new UseCase12();
+        useCase12.printCityPopulationReportDESC();
+
+        //Execute UseCase 13
+        UseCase13 useCase13 = new UseCase13();
+        useCase13.printCityPopulationReportDESC();
+
     }
 
 }
