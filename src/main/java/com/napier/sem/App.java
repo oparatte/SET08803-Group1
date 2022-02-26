@@ -4,6 +4,7 @@ import com.napier.sem.usecases.UseCase1;
 import com.napier.sem.usecases.UseCase2;
 import com.napier.sem.usecases.UseCase3;
 import com.napier.sem.usecases.UseCase4;
+import com.napier.sem.usecases.UseCase7;
 
 
 public class App
@@ -22,11 +23,15 @@ public class App
         //Execute UseCase 3
         UseCase3 useCase3 = new UseCase3();
         useCase3.printCountryPopulationReportDESC();
-
+      
         //Execute UseCase 4
         UseCase4 useCase4 = new UseCase4();
         useCase4.printCountryPopulationReportDESC();
+
+        //Execute UseCase 7
+        UseCase7 useCase7 = new UseCase7();
+        useCase7.printCityPopulationReportDESC();
+
     }
 
 }
-
