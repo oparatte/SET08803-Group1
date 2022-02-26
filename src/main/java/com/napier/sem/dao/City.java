@@ -30,7 +30,7 @@ public class City {
 
     public String getCountry() {return Country;}
 
-    public void setCountry(String County) {this.Country = Country;}
+    public void setCountry(String Country) {this.Country = Country;}
 
     @Override
     public String toString() {
