@@ -12,25 +12,32 @@ public class UseCase41 {
      * Generates a report with the total population of the world
      */
     public void printWorldPopulation(){
-        //Get an instance of the DB Utilities
-        DBUtils dbUtils = new DBUtils();
-        //Connect to the Database;
-        dbUtils.connect();
+       try{
+            //Get an instance of the DB Utilities
+            DBUtils dbUtils = new DBUtils();
+            //Connect to the Database;
+            dbUtils.connect();
 
-        //Prepare the SQL Query for the Use Case
-        String query = "SELECT SUM(population) as sum_population FROM country";
+            //Prepare the SQL Query for the Use Case
+            String query = "SELECT SUM(population) as sum_population FROM country";
 
-        //Generate the Report
-        ResultSet rst = dbUtils.getResultSet(query);
-        String pop = rst.getString("sum_population");
+            //Generate the Report
+            ResultSet rst = dbUtils.getResultSet(query);
 
-        System.out.println("UC 41 Report on Population of world");
-        System.out.println("Population of world: " +rst);
+            System.out.println("UC 41 Report on Population of world");
 
-        //Disconnect from the Database
-        dbUtils.disconnect();
+            rst.next();
+            long population = rst.getLong(1);
+            System.out.println("Total Population of world = " +population+ "\n");
+
+            //Disconnect from the Database
+            dbUtils.disconnect();
+        }
+
+        catch(Exception exc){
+            System.out.println(exc.getMessage());
+        }
+
     }
-
-
 
 }
