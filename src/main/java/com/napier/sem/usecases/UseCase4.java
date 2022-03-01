@@ -12,7 +12,7 @@ public class UseCase4 {
      * Generates a report with the top N populated countries in the world,
      * organised by largest population to smallest
      */
-    public void printCountryPopulationReportDESC(){
+    public void printCountryPopulationReportDESC(int number){
         //Get an instance of the DB Utilities
         DBUtils dbUtils = new DBUtils();
         //Connect to the Database;
@@ -21,7 +21,7 @@ public class UseCase4 {
         //Prepare the SQL Query for the Use Case
         String query = "SELECT * FROM country INNER JOIN city ON country.Capital=city.ID "
                         + "ORDER BY country.population DESC "
-                        + "LIMIT 10 ";
+                        +" LIMIT "+number+" ";
 
         //Put the result of the query into the Data Object Array
         ArrayList<Country> countries = dbUtils.populateCountryArrayList(dbUtils.getResultSet(query));
