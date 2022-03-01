@@ -5,13 +5,13 @@ import com.napier.sem.utils.DBUtils;
 
 import java.util.ArrayList;
 
-public class UseCase8 {
+public class UseCase14 {
 
     /**
-     * Generates a report with all the cities in a continent,
+     * Generates a report with all the top N populated cities in a region,
      * organised by largest population to smallest
      */
-    public void printCityPopulationReportDESC(String Continent){
+    public void printCityPopulationReportDESC(String Region, int number){
         //Get an instance of the DB Utilities
         DBUtils dbUtils = new DBUtils();
         //Connect to the Database;
@@ -19,14 +19,15 @@ public class UseCase8 {
 
         //Prepare the SQL Query for the Use Case
         String query = "SELECT city.*, country.Name as Country FROM city INNER JOIN country ON city.CountryCode=country.Code "
-                + "WHERE country.Continent = '"+Continent+"'"
-                + " ORDER BY city.population DESC";
+                + "WHERE country.Region = '"+Region+"'"
+                + "ORDER BY city.population DESC "
+                +" LIMIT "+number+" ";
 
         //Put the result of the query into the Data Object Array
         ArrayList<City> cities = dbUtils.populateCityArrayList(dbUtils.getResultSet(query));
 
         //Generate the Report
-        System.out.println("UC 8 Report on Cities in a continent by Population");
+        System.out.println("UC 14 Report on top "+number+" populated Cities in "+Region+"");
         System.out.println(String.format("%-30s %-30s %-30s %-15s","Name","Country","District","Population"));
         for (City city : cities)
         {

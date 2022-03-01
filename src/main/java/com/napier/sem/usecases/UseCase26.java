@@ -1,12 +1,10 @@
 package com.napier.sem.usecases;
 
-import com.napier.sem.dao.Country;
 import com.napier.sem.utils.DBUtils;
 
 import java.sql.ResultSet;
-import java.util.ArrayList;
 
-public class UseCase41 {
+public class UseCase26 {
 
     /**
      * Generates a report with the total population of the world
@@ -24,7 +22,7 @@ public class UseCase41 {
             //Generate the Report
             ResultSet rst = dbUtils.getResultSet(query);
 
-            System.out.println("UC 41 Report on Population of world");
+            System.out.println("UC 26 Report on Population of world");
 
             rst.next();
             long population = rst.getLong(1);

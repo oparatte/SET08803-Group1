@@ -1,18 +1,17 @@
 package com.napier.sem.usecases;
 
-import com.napier.sem.dao.City;
 import com.napier.sem.dao.Country;
 import com.napier.sem.utils.DBUtils;
 
 import java.util.ArrayList;
 
-public class UseCase20 {
+public class UseCase5 {
 
     /**
      * Generate a report with the top N populated countries in a continent,
      * where N is provided by a planner, so that they can plan organisation resource allocation
      */
-    public void printPopulationByContinentDESC(String Continent, int number){
+    public void printCountryPopulationReportDESC(String Continent, int number){
         //Get an instance of the DB Utilities
         DBUtils dbUtils = new DBUtils();
 
@@ -29,7 +28,7 @@ public class UseCase20 {
         ArrayList<Country> countries = dbUtils.populateCountryArrayList(dbUtils.getResultSet(query));
 
         //Generate the Report
-        System.out.println("UC 20 Report on Top N populated countries in a continent");
+        System.out.println("UC 5 Report on Top N populated countries in a continent");
         System.out.println(String.format("%-15s %-30s %-15s %-30s","Code","Country ","Continent","Population"));
         for (Country con : countries)
         {
