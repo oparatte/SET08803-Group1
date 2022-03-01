@@ -25,7 +25,7 @@ public class UseCase7 {
         ArrayList<City> cities = dbUtils.populateCityArrayList(dbUtils.getResultSet(query));
 
         //Generate the Report
-        System.out.println("UC 7 Report on Cities by Population");
+        System.out.println("UC 7 Report on Cities in the world by Population");
         System.out.println(String.format("%-30s %-30s %-30s %-15s","Name","Country","District","Population"));
         for (City city : cities)
         {

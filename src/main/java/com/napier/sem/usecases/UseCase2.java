@@ -12,7 +12,7 @@ public class UseCase2 {
      * Generates a report with all the countries in a continent,
      * organised by largest population to smallest
      */
-    public void printCountryPopulationReportDESC(){
+    public void printCountryPopulationReportDESC(String Continent){
         //Get an instance of the DB Utilities
         DBUtils dbUtils = new DBUtils();
         //Connect to the Database;
@@ -20,7 +20,7 @@ public class UseCase2 {
 
         //Prepare the SQL Query for the Use Case
         String query = "SELECT * FROM country INNER JOIN city ON country.Capital=city.ID "
-                        + "WHERE country.Continent = 'Europe'"
+                        + "WHERE country.Continent = '"+Continent+"'"
                         + "ORDER BY country.population DESC";
 
         //Put the result of the query into the Data Object Array

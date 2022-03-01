@@ -26,7 +26,7 @@ https://zube.io/set08803-group1/set08803-assessment/w/workspace-1/kanban
 | 2 | All the countries in a continent organised by largest population to smallest | Yes | ![image](Screenshots/Requirement-2.png) |
 | 3 | All the countries in a region organised by largest population to smallest | Yes | ![image](Screenshots/Requirement-3.png) |
 | 4 | The top N populated countries in the world where N is provided by the user | Yes | ![image](Screenshots/Requirement-4.png) |
-| 5 | The top N populated countries in a continent where N is provided by the user |  |                                         |
+| 5 | The top N populated countries in a continent where N is provided by the user |  | ![image](Screenshots/Requirement-5.png) |
 | 6 | The top N populated countries in a region where N is provided by the user |  |                                         |
 | 7 | All the cities in the world organised by largest population to smallest | Yes | ![image](Screenshots/Requirement-7.png) |
 | 8 | All the cities in a continent organised by largest population to smallest | Yes | ![image](Screenshots/Requirement-8.png) |
@@ -47,7 +47,7 @@ https://zube.io/set08803-group1/set08803-assessment/w/workspace-1/kanban
 | 23 | The population of people, people living in cities, and people not living in cities in each continent |  |                                         |
 | 24 | The population of people, people living in cities, and people not living in cities in each region |  |                                         |
 | 25 | The population of people, people living in cities, and people not living in cities in each country |  |                                         |
-| 26 | The population of the world |  |                                         |
+| 26 | The population of the world | Yes | ![image](Screenshots/Requirement-26.png) |
 | 27 | The population of a continent where the continent is provided by the user |  |                                         |
 | 28 | The population of a region where the region is provided by the user |  |                                         |
 | 29 | The population of a country where the country is provided by the user |  |                                         |
