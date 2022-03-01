@@ -26,7 +26,7 @@ https://zube.io/set08803-group1/set08803-assessment/w/workspace-1/kanban
 | 2 | All the countries in a continent organised by largest population to smallest | Yes | ![image](Screenshots/Requirement-2.png) |
 | 3 | All the countries in a region organised by largest population to smallest | Yes | ![image](Screenshots/Requirement-3.png) |
 | 4 | The top N populated countries in the world where N is provided by the user | Yes | ![image](Screenshots/Requirement-4.png) |
-| 5 | The top N populated countries in a continent where N is provided by the user |  | ![image](Screenshots/Requirement-5.png) |
+| 5 | The top N populated countries in a continent where N is provided by the user | Yes | ![image](Screenshots/Requirement-5.png) |
 | 6 | The top N populated countries in a region where N is provided by the user |  |                                         |
 | 7 | All the cities in the world organised by largest population to smallest | Yes | ![image](Screenshots/Requirement-7.png) |
 | 8 | All the cities in a continent organised by largest population to smallest | Yes | ![image](Screenshots/Requirement-8.png) |
@@ -35,7 +35,7 @@ https://zube.io/set08803-group1/set08803-assessment/w/workspace-1/kanban
 | 11 | All the cities in a district organised by largest population to smallest |  |                                         |
 | 12 | The top N populated cities in the world where N is provided by the user | Yes | ![image](Screenshots/Requirement-12.png) |
 | 13 | The top N populated cities in a continent where N is provided by the user | Yes | ![image](Screenshots/Requirement-13.png) |
-| 14 | The top N populated cities in a region where N is provided by the user |  |                                         |
+| 14 | The top N populated cities in a region where N is provided by the user | Yes | ![image](Screenshots/Requirement-14.png) |
 | 15 | The top N populated cities in a country where N is provided by the user |  |                                         |
 | 16 | The top N populated cities in a district where N is provided by the user |  |                                         |
 | 17 | All the capital cities in the world organised by largest population to smallest |  |                                         |
