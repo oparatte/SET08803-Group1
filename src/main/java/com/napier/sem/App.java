@@ -56,10 +56,6 @@ public class App
         UseCase26 useCase26= new UseCase26();
         useCase26.printWorldPopulation();
 
-        //Execute UseCase 27
-        UseCase27 useCase27= new UseCase27();
-        useCase27.printWorldPopulation("Africa");
-
     }
 
 }
