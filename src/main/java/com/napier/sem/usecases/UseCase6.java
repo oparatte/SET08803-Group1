@@ -32,7 +32,7 @@ public class UseCase6 {
         System.out.println(String.format("%-15s %-30s %-15s %-30s","Code","Country ","Region","Population"));
         for (Country con : countries)
         {
-            String record = String.format("%-15s %-30s %-15s %-30s",con.getCode(),con.getName(),con.getContinent(),con.getPopulation());
+            String record = String.format("%-15s %-30s %-15s %-30s",con.getCode(),con.getName(),con.getRegion(),con.getPopulation());
             System.out.println(record);
         }
         //Disconnect from the Database
