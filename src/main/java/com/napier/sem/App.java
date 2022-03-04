@@ -56,6 +56,10 @@ public class App
         UseCase17 useCase17 = new UseCase17();
         useCase17.printCountryPopulationReportDESC();
 
+        //Execute UseCase 18
+        UseCase18 useCase18 = new UseCase18();
+        useCase18.printCountryPopulationReportDESC("Europe");
+
         //Execute UseCase 26
         UseCase26 useCase26= new UseCase26();
         useCase26.printWorldPopulation();
