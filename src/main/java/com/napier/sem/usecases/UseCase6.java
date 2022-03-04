@@ -28,7 +28,7 @@ public class UseCase6 {
         ArrayList<Country> countries = dbUtils.populateCountryArrayList(dbUtils.getResultSet(query));
 
         //Generate the Report
-        System.out.println("UC 6 Report on Top N populated countries in a region");
+        System.out.println("UC 6 Report on top "+number+" populated countries in "+Region+"");
         System.out.println(String.format("%-15s %-30s %-15s %-30s","Code","Country ","Region","Population"));
         for (Country con : countries)
         {
