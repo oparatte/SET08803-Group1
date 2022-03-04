@@ -28,6 +28,10 @@ public class App
         UseCase5 useCase5 = new UseCase5();
         useCase5.printCountryPopulationReportDESC("Oceania",10);
 
+        //Execute UseCase 6 - Top N populated countries in a region where N is provided by the user
+        UseCase6 useCase6 = new UseCase6();
+        useCase6.printCountryPopulationReportDESC("Caribbean", 12);
+
         //Execute UseCase 7
         UseCase7 useCase7 = new UseCase7();
         useCase7.printCityPopulationReportDESC();
