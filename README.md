@@ -27,7 +27,7 @@ https://zube.io/set08803-group1/set08803-assessment/w/workspace-1/kanban
 | 3 | All the countries in a region organised by largest population to smallest | Yes | ![image](Screenshots/Requirement-3.png) |
 | 4 | The top N populated countries in the world where N is provided by the user | Yes | ![image](Screenshots/Requirement-4.png) |
 | 5 | The top N populated countries in a continent where N is provided by the user | Yes | ![image](Screenshots/Requirement-5.png) |
-| 6 | The top N populated countries in a region where N is provided by the user | Yes | ![image](Screenshots/Requirement-6.png)|
+| 6 | The top N populated countries in a region where N is provided by the user | Yes | ![image](Screenshots/Requirement-06.png)|
 | 7 | All the cities in the world organised by largest population to smallest | Yes | ![image](Screenshots/Requirement-7.png) |
 | 8 | All the cities in a continent organised by largest population to smallest | Yes | ![image](Screenshots/Requirement-8.png) |
 | 9 | All the cities in a region organised by largest population to smallest |  |                                         |
