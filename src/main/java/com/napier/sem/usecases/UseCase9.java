@@ -29,11 +29,11 @@ public class UseCase9 {
 
         //Generate the Report
         System.out.println("UC 9 Report on Cities in a Region organised by Population descending");
-        System.out.println(String.format("%-15s %-30s %-15s %-30s %-15s %-15s","Code","Country ","Continent","Region","Population","Capital"));
+        System.out.println(String.format("%-15s %-30s %-15s","City","Population","Capital"));
         for (City con : cities)
         {
-            String record = String.format("%-15s %-30s %-15s %-30s %-15s %-15s",con.getCode(),con.getName(),con.getContinent(),
-                    con.getRegion(),con.getPopulation(), con.getCapital());
+            String record = String.format("%-15s %-30s %-15s",con.getName(),con.getPopulation(),
+                    con.getCountry());
             System.out.println(record);
         }
         //Disconnect from the Database
