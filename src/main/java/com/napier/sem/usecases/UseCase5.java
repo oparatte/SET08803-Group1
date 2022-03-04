@@ -28,7 +28,7 @@ public class UseCase5 {
         ArrayList<Country> countries = dbUtils.populateCountryArrayList(dbUtils.getResultSet(query));
 
         //Generate the Report
-        System.out.println("UC 5 Report on Top N populated countries in a continent");
+        System.out.println("UC 5 Report on Top "+number+" populated countries in a continent");
         System.out.println(String.format("%-15s %-30s %-15s %-30s","Code","Country ","Continent","Population"));
         for (Country con : countries)
         {

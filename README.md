@@ -38,10 +38,10 @@ https://zube.io/set08803-group1/set08803-assessment/w/workspace-1/kanban
 | 14 | The top N populated cities in a region where N is provided by the user | Yes | ![image](Screenshots/Requirement-14.png) |
 | 15 | The top N populated cities in a country where N is provided by the user |  |                                         |
 | 16 | The top N populated cities in a district where N is provided by the user |  |                                         |
-| 17 | All the capital cities in the world organised by largest population to smallest | Yes | ![image](Screenshots/Requirement-14.png) |
-| 18 | All the capital cities in a continent organised by largest population to smallest |  |                                         |
-| 19 | All the capital cities in a region organised by largest to smallest |  |                                         |
-| 20 | The top N populated capital cities in the world where N is provided by the user |  |                                         |
+| 17 | All the capital cities in the world organised by largest population to smallest | Yes | ![image](Screenshots/Requirement-17.png) |
+| 18 | All the capital cities in a continent organised by largest population to smallest | Yes | ![image](Screenshots/Requirement-18.png) |
+| 19 | All the capital cities in a region organised by largest to smallest | Yes | ![image](Screenshots/Requirement-19.png) |
+| 20 | The top N populated capital cities in the world where N is provided by the user | Yes | ![image](Screenshots/Requirement-20.png) |
 | 21 | The top N populated capital cities in a continent where N is provided by the user |  |                                         |
 | 22 | The top N populated capital cities in a region where N is provided by the user |  |                                         |
 | 23 | The population of people, people living in cities, and people not living in cities in each continent |  |                                         |
