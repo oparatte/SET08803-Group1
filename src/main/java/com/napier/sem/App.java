@@ -2,7 +2,7 @@ package com.napier.sem;
 
 import com.napier.sem.usecases.*;
 
-/**
+
 public class App
 {
 
@@ -79,16 +79,4 @@ public class App
     }
 
 }
-*/
-public class App
-{
 
-    public static void main(String[] args) {
-
-        //Execute UseCase 21
-        UseCase21 useCase21 = new UseCase21();
-        useCase21.printCountryPopulationReportDESC("Africa", 10);
-
-    }
-
-}
