@@ -68,6 +68,10 @@ public class App
         UseCase20 useCase20 = new UseCase20();
         useCase20.printCountryPopulationReportDESC(10);
 
+        //Execute UseCase 22
+        UseCase22 useCase22 = new UseCase22();
+        useCase22.printCountryPopulationReportDESC("Southern and Central Asia", 10);
+
         //Execute UseCase 26
         UseCase26 useCase26= new UseCase26();
         useCase26.printWorldPopulation();
