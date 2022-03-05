@@ -2,6 +2,7 @@ package com.napier.sem;
 
 import com.napier.sem.usecases.*;
 
+
 public class App
 {
 
@@ -54,6 +55,10 @@ public class App
         //Execute UseCase 15
         UseCase15 useCase15= new UseCase15();
         useCase15.printCityPopulationReportDESC("Australia", 5);
+
+        //Execute UseCase 16
+        UseCase16 useCase16= new UseCase16();
+        useCase16.printCityPopulationReportDESC("California", 5);
 
         //Execute UseCase 17
         UseCase17 useCase17 = new UseCase17();
