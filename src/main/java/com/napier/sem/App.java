@@ -44,6 +44,10 @@ public class App
         UseCase10 useCase10 = new UseCase10();
         useCase10.printCityPopulationReportDESC("United Kingdom");
 
+        //Execute UseCase 11
+        UseCase11 useCase11 = new UseCase11();
+        useCase11.printCityPopulationReportDESC("Punjab");
+
         //Execute UseCase 12
         UseCase12 useCase12 = new UseCase12();
         useCase12.printCityPopulationReportDESC(10);
