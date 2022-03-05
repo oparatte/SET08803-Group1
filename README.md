@@ -42,7 +42,7 @@ https://zube.io/set08803-group1/set08803-assessment/w/workspace-1/kanban
 | 18 | All the capital cities in a continent organised by largest population to smallest | Yes | ![image](Screenshots/Requirement-18.png) |
 | 19 | All the capital cities in a region organised by largest to smallest | Yes | ![image](Screenshots/Requirement-19.png) |
 | 20 | The top N populated capital cities in the world where N is provided by the user | Yes | ![image](Screenshots/Requirement-20.png) |
-| 21 | The top N populated capital cities in a continent where N is provided by the user |  |                                         |
+| 21 | The top N populated capital cities in a continent where N is provided by the user | Yes | ![image](Screenshots/Requirement-21.png) |
 | 22 | The top N populated capital cities in a region where N is provided by the user |  |                                         |
 | 23 | The population of people, people living in cities, and people not living in cities in each continent |  |                                         |
 | 24 | The population of people, people living in cities, and people not living in cities in each region |  |                                         |
