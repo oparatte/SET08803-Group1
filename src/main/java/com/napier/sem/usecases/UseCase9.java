@@ -19,7 +19,7 @@ public class UseCase9 {
 
         //Prepare the SQL Query for the Use Case
         String query = "SELECT city.*, country.Name as Country FROM city INNER JOIN country ON city.CountryCode=country.Code "
-                + "WHERE region.Name = '"+Region+"'"
+                + "WHERE country.Region = '"+Region+"'"
                 + " ORDER BY city.population DESC";
 
         //Put the result of the query into the Data Object Array
@@ -27,10 +27,10 @@ public class UseCase9 {
 
         //Generate the Report
         System.out.println("UC 9 Report on cities in "+Region+" by population");
-        System.out.println(String.format("%-30s %-30s %-30s %-15s","Name","Region","District","Population"));
+        System.out.println(String.format("%-30s %-30s %-30s %-15s","Name","Country","District","Population"));
         for (City city : cities)
         {
-            String record = String.format("%-30s %-30s %-30s %-15s",city.getName(),city.getRegion(),
+            String record = String.format("%-30s %-30s %-30s %-15s",city.getName(),city.getCountry(),
                     city.getDistrict(),city.getPopulation());
             System.out.println(record);
         }
