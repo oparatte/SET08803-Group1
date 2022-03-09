@@ -51,7 +51,7 @@ https://zube.io/set08803-group1/set08803-assessment/w/workspace-1/kanban
 | 24 | The population of people, people living in cities, and people not living in cities in each region |  |                                         |
 | 25 | The population of people, people living in cities, and people not living in cities in each country |  |                                         |
 | 26 | The population of the world | Yes | ![image](Screenshots/Requirement-26.png) |
-| 27 | The population of a continent where the continent is provided by the user |  |                                         |
+| 27 | The population of a continent where the continent is provided by the user | Yes | ![image](Screenshots/Requirement-27.png) |
 | 28 | The population of a region where the region is provided by the user |  |                                         |
 | 29 | The population of a country where the country is provided by the user |  |                                         |
 | 30 | The population of a district where the district is provided by the user |  |                                         |
