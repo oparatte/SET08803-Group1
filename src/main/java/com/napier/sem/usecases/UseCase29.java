@@ -7,9 +7,9 @@ import java.sql.ResultSet;
 public class UseCase29 {
 
     /**
-     * Generates a report with the total population of a Continent where the Continent is provided by the user.
+     * Generates a report with the total population of a country where the country is provided by the user.
      */
-    public void printRegionPopulation(String Country){
+    public void printCountryPopulation(String Country){
         try{
             //Get an instance of the DB Utilities
             DBUtils dbUtils = new DBUtils();
@@ -23,7 +23,7 @@ public class UseCase29 {
             //Generate the Report
             ResultSet rst = dbUtils.getResultSet(query);
 
-            System.out.println("UC 29 Report on Population of "+Country+"");
+            System.out.println("UC 29 Report on Population of a Country");
 
             rst.next();
             long population = rst.getLong(1);
