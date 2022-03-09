@@ -23,7 +23,7 @@ public class UseCase28 {
             //Generate the Report
             ResultSet rst = dbUtils.getResultSet(query);
 
-            System.out.println("UC 28 Report on Population of "+Region+"");
+            System.out.println("UC 28 Report on Population of a Region");
 
             rst.next();
             long population = rst.getLong(1);
