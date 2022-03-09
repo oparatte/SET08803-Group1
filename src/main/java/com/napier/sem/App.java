@@ -107,6 +107,10 @@ public class App
         UseCase29 useCase29 = new UseCase29();
         useCase29.printRegionPopulation("Peru");
 
+        //Execute UseCase 30
+        UseCase30 useCase30 = new UseCase30();
+        useCase30.printDistrictPopulation("Suez");
+
     }
 
 }
