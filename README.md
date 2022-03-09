@@ -52,8 +52,8 @@ https://zube.io/set08803-group1/set08803-assessment/w/workspace-1/kanban
 | 25 | The population of people, people living in cities, and people not living in cities in each country |  |                                         |
 | 26 | The population of the world | Yes | ![image](Screenshots/Requirement-26.png) |
 | 27 | The population of a continent where the continent is provided by the user |  |                                         |
-| 28 | The population of a region where the region is provided by the user |  |                                         |
-| 29 | The population of a country where the country is provided by the user |  |                                         |
+| 28 | The population of a region where the region is provided by the user | Yes | ![image](Screenshots/Requirement-28.png) |
+| 29 | The population of a country where the country is provided by the user | Yes | ![image](Screenshots/Requirement-29.png) |
 | 30 | The population of a district where the district is provided by the user |  |                                         |
 | 31 | The population of a city where the city is provided by the user |  |                                         |
 | 32 | The number of people speaking Chinese, English, Hindi, Spanish and Arabic sorted from greatest number to smallest and including the percentage of the world population |  |                                         |
