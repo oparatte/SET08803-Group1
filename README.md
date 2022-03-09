@@ -21,7 +21,7 @@ https://zube.io/set08803-group1/set08803-assessment/w/workspace-1/kanban
 
 ## Requirements Met Overview
 
-26 requirements of 32 have been implemented, which is 81%
+28 requirements of 32 have been implemented, which is 88%
 
 | ID    | Name | Met | Screenshot                              |
 |-------|------|--|-----------------------------------------|
@@ -47,13 +47,13 @@ https://zube.io/set08803-group1/set08803-assessment/w/workspace-1/kanban
 | 20 | The top N populated capital cities in the world where N is provided by the user | Yes | ![image](Screenshots/Requirement-20.png) |
 | 21 | The top N populated capital cities in a continent where N is provided by the user | Yes | ![image](Screenshots/Requirement-21.png) |
 | 22 | The top N populated capital cities in a region where N is provided by the user | Yes | ![image](Screenshots/Requirement-22.png) |
-| 23 | The population of people, people living in cities, and people not living in cities in each continent |  |                                         |
-| 24 | The population of people, people living in cities, and people not living in cities in each region |  |                                         |
-| 25 | The population of people, people living in cities, and people not living in cities in each country |  |                                         |
+| 23 | The population of people, people living in cities, and people not living in cities in each continent |  |       |
+| 24 | The population of people, people living in cities, and people not living in cities in each region |  |        |
+| 25 | The population of people, people living in cities, and people not living in cities in each country |  |           |
 | 26 | The population of the world | Yes | ![image](Screenshots/Requirement-26.png) |
-| 27 | The population of a continent where the continent is provided by the user |  |                                         |
+| 27 | The population of a continent where the continent is provided by the user | Yes | ![image](Screenshots/Requirement-27.png) |
 | 28 | The population of a region where the region is provided by the user | Yes | ![image](Screenshots/Requirement-28.png) |
 | 29 | The population of a country where the country is provided by the user | Yes | ![image](Screenshots/Requirement-29.png) |
 | 30 | The population of a district where the district is provided by the user | Yes | ![image](Screenshots/Requirement-30.png) |
-| 31 | The population of a city where the city is provided by the user |  |                                         |
-| 32 | The number of people speaking Chinese, English, Hindi, Spanish and Arabic sorted from greatest number to smallest and including the percentage of the world population |  |                                         |
+| 31 | The population of a city where the city is provided by the user | Yes | ![image](Screenshots/Requirement-31.png) |
+| 32 | The number of people speaking Chinese, English, Hindi, Spanish and Arabic sorted from greatest number to smallest and including the percentage of the world population |  |     |

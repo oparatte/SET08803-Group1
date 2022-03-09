@@ -4,12 +4,12 @@ import com.napier.sem.utils.DBUtils;
 
 import java.sql.ResultSet;
 
-public class UseCase30 {
+public class UseCase27 {
 
     /**
-     * Generates a report with the total population of a district where the district is provided by the user.
+     * Generates a report with the total population of a continent where the region is provided by the user.
      */
-    public void printDistrictPopulation(String District){
+    public void printRegionPopulation(String Continent){
         try{
             //Get an instance of the DB Utilities
             DBUtils dbUtils = new DBUtils();
@@ -17,17 +17,17 @@ public class UseCase30 {
             dbUtils.connect();
 
             //Prepare the SQL Query for the Use Case
-            String query = "SELECT SUM(population) as sum_population FROM city "
-                    +"WHERE city.district = '"+District+"'";
+            String query = "SELECT SUM(population) as sum_population FROM country "
+                    +"WHERE country.Continent = '"+Continent+"'";
 
             //Generate the Report
             ResultSet rst = dbUtils.getResultSet(query);
 
-            System.out.println("UC 30 Report on Population of a District");
+            System.out.println("UC 27 Report on Population of "+Continent+"");
 
             rst.next();
             long population = rst.getLong(1);
-            System.out.println("Population of "+District+" = " +population+ "\n");
+            System.out.println("Total Population of "+Continent+" = " +population+ "\n");
 
             //Disconnect from the Database
             dbUtils.disconnect();
