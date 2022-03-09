@@ -7,10 +7,6 @@ public class App
 
     public static void main(String[] args) {
 
-        //Execute UseCase 29
-        UseCase29 useCase29 = new UseCase29();
-        useCase29.printRegionPopulation("Antarctica");
-
         //Execute UseCase 1
         UseCase1 useCase1 = new UseCase1();
         useCase1.printCountryPopulationReportDESC();
@@ -106,6 +102,10 @@ public class App
         //Execute UseCase 28
         UseCase28 useCase28 = new UseCase28();
         useCase28.printRegionPopulation("British Islands");
+
+        //Execute UseCase 29
+        UseCase29 useCase29 = new UseCase29();
+        useCase29.printRegionPopulation("Peru");
 
     }
 
