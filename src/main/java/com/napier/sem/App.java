@@ -99,6 +99,14 @@ public class App
         UseCase26 useCase26= new UseCase26();
         useCase26.printWorldPopulation();
 
+        //Execute UseCase 28
+        UseCase28 useCase28 = new UseCase28();
+        useCase28.printRegionPopulation("British Islands");
+
+        //Execute UseCase 29
+        UseCase29 useCase29 = new UseCase29();
+        useCase29.printRegionPopulation("Peru");
+
     }
 
 }
