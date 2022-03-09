@@ -21,7 +21,7 @@ https://zube.io/set08803-group1/set08803-assessment/w/workspace-1/kanban
 
 ## Requirements Met Overview
 
-22 requirements of 32 have been implemented, which is 69%
+26 requirements of 32 have been implemented, which is 81%
 
 | ID    | Name | Met | Screenshot                              |
 |-------|------|--|-----------------------------------------|
