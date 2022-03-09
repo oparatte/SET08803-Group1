@@ -9,7 +9,7 @@ public class UseCase29 {
     /**
      * Generates a report with the total population of a Continent where the Continent is provided by the user.
      */
-    public void printRegionPopulation(String Country){
+    public void printCountryPopulation(String Country){
         try{
             //Get an instance of the DB Utilities
             DBUtils dbUtils = new DBUtils();
