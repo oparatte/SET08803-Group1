@@ -8,6 +8,10 @@ public class App
 
     public static void main(String[] args) {
 
+        //Execute UseCase 32
+        UseCase32 useCase32 = new UseCase32();
+        useCase32.printLanguageReport();
+
         //Execute UseCase 1
         UseCase1 useCase1 = new UseCase1();
         useCase1.printCountryPopulationReportDESC();
