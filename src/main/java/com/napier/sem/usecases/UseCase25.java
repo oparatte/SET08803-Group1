@@ -18,7 +18,7 @@ public class UseCase25 {
             //Prepare the SQL Query for the Use Case
             String query = "SELECT country.Name, "
                     +"SUM(city.Population) AS inCity, "
-                    +"country.Population - SUM(city.Population) AS outCity "
+                    +"SUM(country.Population - city.Population) AS outCity "
                     +"FROM country INNER JOIN city ON country.Code = city.CountryCode "
                     +"GROUP BY country.name "
                     +"ORDER BY country.name";
