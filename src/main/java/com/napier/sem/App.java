@@ -120,6 +120,9 @@ public class App
         UseCase31 useCase31 = new UseCase31();
         useCase31.printDistrictPopulation("Paris");
 
+        //Execute UseCase 32
+        UseCase32 useCase32 = new UseCase32();
+        useCase32.printLanguageReport();
     }
 
 }
