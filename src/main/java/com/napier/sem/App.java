@@ -8,6 +8,10 @@ public class App
 
     public static void main(String[] args) {
 
+        //Execute UseCase 23
+        UseCase23 useCase23 = new UseCase23();
+        useCase23.printPopulationInCityByContinent();
+
         //Execute UseCase 1
         UseCase1 useCase1 = new UseCase1();
         useCase1.printCountryPopulationReportDESC();
