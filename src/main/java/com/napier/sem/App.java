@@ -12,6 +12,11 @@ public class App
         UseCase23 useCase23 = new UseCase23();
         useCase23.printPopulationInCityByContinent();
 
+        //Execute UseCase 24
+        UseCase24 useCase24 = new UseCase24();
+        useCase24.printPopulationInCityByRegion();
+
+
         //Execute UseCase 1
         UseCase1 useCase1 = new UseCase1();
         useCase1.printCountryPopulationReportDESC();

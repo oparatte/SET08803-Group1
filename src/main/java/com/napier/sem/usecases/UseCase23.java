@@ -20,7 +20,8 @@ public class UseCase23 {
                     +"SUM(city.Population) AS inCity, "
                     +"SUM(country.Population - city.Population) AS outCity "
                     +"FROM country LEFT JOIN city ON country.Code = city.CountryCode "
-                    +"GROUP BY country.Continent";
+                    +"GROUP BY country.Continent "
+                    +"ORDER BY country.Continent";
 
             /** Generate the report */
             System.out.println("UC 23 Report on Persons living in and out of cities for each Continent\n");
