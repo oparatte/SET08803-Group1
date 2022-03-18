@@ -1,10 +1,6 @@
 package com.napier.sem.usecases;
-
-import com.napier.sem.dao.Country;
 import com.napier.sem.utils.DBUtils;
-
 import java.sql.ResultSet;
-import java.util.ArrayList;
 
 public class UseCase32 {
     /**
@@ -18,6 +14,7 @@ public class UseCase32 {
             //Connect to the Database;
             dbUtils.connect();
 
+            /**Generate SQL Query 1 to get population of the world from database*/
             String query1 = "SELECT SUM(population) as sum_population FROM country";
             ResultSet rst = dbUtils.getResultSet(query1);
             rst.next();
@@ -37,16 +34,17 @@ public class UseCase32 {
                     +"GROUP BY countrylanguage.Language "
                     +"ORDER BY languageCount DESC";
 
-            //Put the result of the query into the Data Object Array
+            /** Generate the report */
+            System.out.println("UC 32 Report on 5 languages sorted from greatest to smallest");
             ResultSet resultSet = dbUtils.getResultSet(query2);
-            System.out.println(String.format("%-30s %-30s %-30s","Language","Count","Population"));
+            System.out.println(String.format("%-15s %-15s %-6s","Language","Count","Population"));
 
             while (resultSet.next()){
                 String Language = resultSet.getString("language");
                 String languageCount = resultSet.getString("languageCount");
                 String languagePercentage = resultSet.getString("languagePercentage");
 
-                System.out.println(String.format("%-30s %-30s %-30s",""+Language+"",""+languageCount+"",""+languagePercentage+"%"));
+                System.out.println(String.format("%-15s %-15s %-6s",""+Language+"",""+languageCount+"",""+languagePercentage+"%"));
             }
         } //end of try block
 
@@ -54,6 +52,6 @@ public class UseCase32 {
             System.out.println(exc.getMessage());
         }
 
-    }
+    } //end of printLanguageReport
 
 }
