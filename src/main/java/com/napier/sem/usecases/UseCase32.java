@@ -38,19 +38,17 @@ public class UseCase32 {
                     +"ORDER BY languageCount DESC";
 
             //Put the result of the query into the Data Object Array
-            ArrayList<Country> countries = dbUtils.populateCountryArrayList(dbUtils.getResultSet(query2));
+            ResultSet resultSet = dbUtils.getResultSet(query2);
+            System.out.println(String.format("%-30s %-30s %-30s","Language","Count","Population"));
 
-            //Generate the Report
-            System.out.println("UC 32 Report on Languages");
-            System.out.println(String.format("%-30s %-30s %-15s","Language","Population", "Percentage"));
-            for (Country con : countries)
-            {
-                String record = String.format("%-30s %-30s %-15s",con.getLanguage(),con.getLanguageCount(),con.getLanguagePercentage());
-                System.out.println(record);
+            while (resultSet.next()){
+                String Language = resultSet.getString("language");
+                String languageCount = resultSet.getString("languageCount");
+                String languagePercentage = resultSet.getString("languagePercentage");
+
+                System.out.println(String.format("%-30s %-30s %-30s",""+Language+"",""+languageCount+"",""+languagePercentage+"%"));
             }
-            //Disconnect from the Database
-            dbUtils.disconnect();
-        }
+        } //end of try block
 
         catch(Exception exc){
             System.out.println(exc.getMessage());
