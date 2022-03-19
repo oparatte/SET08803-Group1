@@ -21,7 +21,7 @@ https://zube.io/set08803-group1/set08803-assessment/w/workspace-1/kanban
 
 ## Requirements Met Overview
 
-29 requirements of 32 have been implemented, which is 91%
+32 requirements of 32 have been implemented, which is 100%
 
 | ID    | Name | Met | Screenshot                              |
 |-------|------|--|-----------------------------------------|
@@ -47,9 +47,9 @@ https://zube.io/set08803-group1/set08803-assessment/w/workspace-1/kanban
 | 20 | The top N populated capital cities in the world where N is provided by the user | Yes | ![image](Screenshots/Requirement-20.png) |
 | 21 | The top N populated capital cities in a continent where N is provided by the user | Yes | ![image](Screenshots/Requirement-21.png) |
 | 22 | The top N populated capital cities in a region where N is provided by the user | Yes | ![image](Screenshots/Requirement-22.png) |
-| 23 | The population of people, people living in cities, and people not living in cities in each continent |  |       |
-| 24 | The population of people, people living in cities, and people not living in cities in each region |  |        |
-| 25 | The population of people, people living in cities, and people not living in cities in each country |  |           |
+| 23 | The population of people, people living in cities, and people not living in cities in each continent | Yes | ![image](Screenshots/Requirement-23.png) |
+| 24 | The population of people, people living in cities, and people not living in cities in each region | Yes | ![image](Screenshots/Requirement-24.png) |
+| 25 | The population of people, people living in cities, and people not living in cities in each country | Yes | ![image](Screenshots/Requirement-25.png) |
 | 26 | The population of the world | Yes | ![image](Screenshots/Requirement-26.png) |
 | 27 | The population of a continent where the continent is provided by the user | Yes | ![image](Screenshots/Requirement-27.png) |
 | 28 | The population of a region where the region is provided by the user | Yes | ![image](Screenshots/Requirement-28.png) |
