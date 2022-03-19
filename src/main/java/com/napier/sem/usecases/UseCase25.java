@@ -18,22 +18,22 @@ public class UseCase25 {
             //Prepare the SQL Query for the Use Case
             String query = "SELECT country.Name, "
                     +"SUM(city.Population) AS inCity, "
-                    +"SUM(country.Population - city.Population) AS outCity "
+                    +"SUM(DISTINCT(country.Population)) - SUM(city.Population) AS outCity "
                     +"FROM country INNER JOIN city ON country.Code = city.CountryCode "
                     +"GROUP BY country.name "
                     +"ORDER BY country.name";
 
-            /** Generate the report */
+            /* Generate the report */
             System.out.println("UC 25 Report on Persons living in and out of cities for each Country\n");
             ResultSet resultSet = dbUtils.getResultSet(query);
-            System.out.println(String.format("%-35s %-20s %-6s","Country","People in cities","People not in cities"));
+            System.out.println(String.format("%-40s %-20s %-6s","Country","People in cities","People not in cities"));
 
             while (resultSet.next()){
                 String country = resultSet.getString("name");
                 String inCity = resultSet.getString("inCity");
                 String outCity = resultSet.getString("outCity");
 
-                System.out.println(String.format("%-35s %-20s %-6s",""+country+"",""+inCity+"",""+outCity+""));
+                System.out.println(String.format("%-40s %-20s %-6s",""+country+"",""+inCity+"",""+outCity+""));
             }
 
 

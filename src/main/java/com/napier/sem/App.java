@@ -8,19 +8,6 @@ public class App
 
     public static void main(String[] args) {
 
-        //Execute UseCase 25
-        UseCase25 useCase25 = new UseCase25();
-        useCase25.printPopulationInCityByCountry();
-
-        //Execute UseCase 23
-        UseCase23 useCase23 = new UseCase23();
-        useCase23.printPopulationInCityByContinent();
-
-        //Execute UseCase 24
-        UseCase24 useCase24 = new UseCase24();
-        useCase24.printPopulationInCityByRegion();
-
-
         //Execute UseCase 1
         UseCase1 useCase1 = new UseCase1();
         useCase1.printCountryPopulationReportDESC();
@@ -104,11 +91,23 @@ public class App
         //Execute UseCase 21
         UseCase21 useCase21 = new UseCase21();
         useCase21.printCountryPopulationReportDESC("Africa", 10);
-      
+
         //Execute UseCase 22
         UseCase22 useCase22 = new UseCase22();
         useCase22.printCountryPopulationReportDESC("Southern and Central Asia", 10);
-      
+
+        //Execute UseCase 23
+        UseCase23 useCase23 = new UseCase23();
+        useCase23.printPopulationInCityByContinent();
+
+        //Execute UseCase 24
+        UseCase24 useCase24 = new UseCase24();
+        useCase24.printPopulationInCityByRegion();
+
+        //Execute UseCase 25
+        UseCase25 useCase25 = new UseCase25();
+        useCase25.printPopulationInCityByCountry();
+
         //Execute UseCase 26
         UseCase26 useCase26= new UseCase26();
         useCase26.printWorldPopulation();

@@ -5,7 +5,7 @@ import java.sql.ResultSet;
 public class UseCase32 {
     /**
      *The number of people speaking Chinese, English, Hindi, Spanish and Arabic sorted from
-     *greatest number to smallest and including the percentage of the world population
+     *the greatest number to smallest and including the percentage of the world population
      */
     public void printLanguageReport(){
         try{
@@ -14,7 +14,7 @@ public class UseCase32 {
             //Connect to the Database;
             dbUtils.connect();
 
-            /**Generate SQL Query 1 to get population of the world from database*/
+            /*Generate SQL Query 1 to get population of the world from database*/
             String query1 = "SELECT SUM(population) as sum_population FROM country";
             ResultSet rst = dbUtils.getResultSet(query1);
             rst.next();
@@ -34,7 +34,7 @@ public class UseCase32 {
                     +"GROUP BY countrylanguage.Language "
                     +"ORDER BY languageCount DESC";
 
-            /** Generate the report */
+            /* Generate the report */
             System.out.println("UC 32 Report on 5 languages sorted from greatest to smallest");
             ResultSet resultSet = dbUtils.getResultSet(query2);
             System.out.println(String.format("%-15s %-15s %-6s","Language","Count","Population"));

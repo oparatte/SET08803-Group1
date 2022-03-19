@@ -18,12 +18,12 @@ public class UseCase24 {
             //Prepare the SQL Query for the Use Case
             String query = "SELECT country.Region, "
                     +"SUM(city.Population) AS inCity, "
-                    +"SUM(country.Population - city.Population) AS outCity "
+                    +"SUM(DISTINCT(country.Population)) - SUM(city.Population) AS outCity "
                     +"FROM country LEFT JOIN city ON country.Code = city.CountryCode "
                     +"GROUP BY country.Region "
                     +"ORDER BY country.Region";
 
-            /** Generate the report */
+            /* Generate the report */
             System.out.println("UC 24 Report on Persons living in and out of cities for each Region\n");
             ResultSet resultSet = dbUtils.getResultSet(query);
             System.out.println(String.format("%-35s %-20s %-6s","Region","People in cities","People not in cities"));
