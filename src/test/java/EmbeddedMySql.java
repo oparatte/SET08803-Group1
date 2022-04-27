@@ -17,7 +17,6 @@ import static com.wix.mysql.config.MysqldConfig.aMysqldConfig;
 import static com.wix.mysql.distribution.Version.v5_6_latest;
 
 public abstract class EmbeddedMySql {
-    // connecting to a running Postgres and feeding up the database
     public static Connection conn;
     private static  EmbeddedMysql mysqld;
     @BeforeAll
